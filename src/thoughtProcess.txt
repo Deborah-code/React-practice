@@ -1,0 +1,49 @@
+
+What exactly is the game?
+
+random numbers get displayed
+
+the sum of the numbers are displayed as well
+
+we want a player to decide if the random sums generated are actually true, and not just another random figure.
+
+if the player gets it right their score increases. If they don't their score doesn't
+
+What i need
+an onclick function for the true and false buttons
+
+Conditionals.
+If they click true and the answer is true then it should add
+
+If they click false and the answer is false it should add
+
+however if they click true and the answer is false, 
+the count should remain the same.
+
+How does this apply to state?
+
+I need to identify what the state is, what it needs to be, and how to get it there
+
+Might need to use an event handler/listener to see what button has been clicked
+
+
+this.setState((prevState) => ({
+ count: prevState.count + 1
+}))
+
+Math.floor(Math.random() * 100),
+
+State is for things you want to keep track of, constructor gets called once
+
+
+Create a different component for the score.
+We can't put the variables in the constructor because the constructor only gets called once
+
+We are only putting the variables we want to keep track of in the state, like the no of questions and no of correct answers
+
+For the click handler, we need to keep track of the correct answers, and the randomly guessed answer.
+Remember that because the variables have been declared using let in the render method, they are now local variables and the way to access them outside the render method is by passing them as arguments to the clickHandler method.
+
+The clickHandler should determine if the correct answer and proposed answer are equal (this was done using the if conditionals)
+
+
